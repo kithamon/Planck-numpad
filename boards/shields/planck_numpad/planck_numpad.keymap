@@ -22,7 +22,7 @@
                 &kp TAB    &kp N7    &kp N8    &kp N9    &kp KP_DIVIDE    
                 &trans  &kp N4    &kp N5    &kp N6    &kp KP_MULTIPLY   
                 &kp LSHFT  &kp N1    &kp N2    &kp N3    &kp KP_MINUS    
-        &lt 1 ENT    &kp KP_DOT  &kp N0    &kp KP_EQUAL  &kp KP_PLUS  
+        &mo 1    &kp KP_DOT  &kp N0    &kp KP_EQUAL  &kp KP_PLUS  
             >;
         };
 
