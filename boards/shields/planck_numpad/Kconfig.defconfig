@@ -1,0 +1,6 @@
+if SHIELD_PLANCK_NUMPAD
+
+config ZMK_KEYBOARD_NAME
+    default "BCI NumPad"
+
+endif
