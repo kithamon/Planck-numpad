@@ -31,18 +31,33 @@
             >;
         };
 
-        lower {
+        1 {
             // -----------------------------------------------
             // |   BSPC  |   HOME |   UP   | PG UP  |   DEL  |
             // |   ____  |  LEFT  |  ____  | RIGHT  |  ___   | 
             // |  SHIFT  |  END   |  DOWN  | PG DWN |  ___   | 
-            // |         |  ___   |  ___   | BT NXT |  BT CLR| 
+            // |         |  ___   |  ___   | ______ | layer 2| 
             // -----------------------------------------------
             bindings = <
                 &kp BSPC  &kp HOME   &mt RA(UP) UP   &kp PG_UP   &kp DEL
                 &trans  &mt RA(LEFT) LEFT  &trans   &mt RA(RIGHT) RIGHT   &trans    
                 &trans  &kp END   &mt RA(DOWN) DOWN   &kp PG_DN    &trans    
-                &trans     &kp RG(LBKT)   &kp RG(RBKT)  &bt BT_NXT   &bt BT_CLR 
+                &trans     &kp RG(LBKT)   &kp RG(RBKT)  &trans   &mo 2 
+            >;
+        };
+
+        2 {
+            // -----------------------------------------------
+            // |  BT_CLR | BT_ALL |  ____  |sys_reset|bootloader|
+            // |   ____  | ______ |  ____  | ______ |  ___   | 
+            // |  ______ |  BT 0  |  BT 1  |  BT 2  |  ___   | 
+            // |         |  ___   |  ___   | ______ |  ____  | 
+            // -----------------------------------------------
+            bindings = <
+                &bt BT_CLR  &bt BT_CLR_ALL   &trans   &sys_reset  &bootloader
+                &trans  &trans  &trans   &trans   &trans    
+                &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans    
+                &trans  &trans   &trans  &trans  &trans 
             >;
         };
     };
