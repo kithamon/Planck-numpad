@@ -36,7 +36,7 @@
             bindings = <
                 &kp BSPC  &kp HOME   &mt RA(UP) UP   &kp PG_UP   &kp DEL
                 &trans  &mt RA(LEFT) LEFT  &trans   &mt RA(RIGHT) RIGHT   &trans    
-                &trans &kp END &mt RA(DOWN) DOWN   &kp PG_DN   &trans    
+                &trans  &kp END   &mt RA(DOWN) DOWN   &kp PG_DN    &trans    
                 &trans     &kp RG(LBKT)   &kp RG(RBKT)  &bt BT_NXT   &bt BT_CLR 
             >;
         };
