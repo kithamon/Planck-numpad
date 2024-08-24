@@ -28,10 +28,10 @@
 
         lower {
             // -----------------------------------------------
-            // |   BSPC  |   HOME |   UP   | PG UP  |  DEL  |
+            // |   BSPC  |   HOME |   UP   | PG UP  |   DEL  |
             // |   ____  |  LEFT  |  ____  | RIGHT  |  ___   | 
             // |  SHIFT  |  END   |  DOWN  | PG DWN |  ___   | 
-            // |         |  ___   |  ___   |  ___   |  ___   | 
+            // |         |  ___   |  ___   | BT NXT |  BT CLR| 
             // -----------------------------------------------
             bindings = <
                 &kp BSPC  &kp HOME   &mt RA(UP) UP   &kp PG_UP   &kp DEL
